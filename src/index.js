@@ -1,4 +1,4 @@
-import '@/styles/_reset.scss'
+import '@/styles/main.scss'
 import { Router } from '@/core/router/router'
 
 new Router()

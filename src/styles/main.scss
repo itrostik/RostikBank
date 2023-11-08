@@ -1,0 +1,12 @@
+@import "reset";
+@import "variables";
+
+body, html {
+  background: $background-body;
+  min-height: 100%;
+}
+
+*{
+  color: $text-color;
+  font-family: $text-fontFamily;
+}

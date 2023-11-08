@@ -1,0 +1,20 @@
+.user-item{
+  display: flex;
+  align-items: center;
+  padding: 7px;
+  gap: 10px;
+  border-radius: 10px;
+  background: #FFF;
+  cursor: auto;
+  img{
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+  span{
+    color: #000;
+    font-size: 14px;
+    font-weight: 600;
+  }
+}

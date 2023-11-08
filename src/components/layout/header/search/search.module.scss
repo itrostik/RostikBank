@@ -1,2 +1,32 @@
-.header{
+.search{
+  width: 100%;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border-radius: 20px;
+  background: #FFF;
+  transition: 0.5s;
+  flex: 1 1 auto;
+  path{
+    fill: #C4C4C4;
+    transition: 0.5s;
+  }
+  input{
+    width: 100%;
+    color: #111111;
+    font-size: 14px;
+    font-weight: 600;
+  }
+  input::placeholder{
+    color: #C4C4C4;
+    font-size: 14px;
+    font-weight: 600;
+  }
+  &:focus-within{
+    path {
+      fill: #111111;
+    }
+    box-shadow: 0 0 10px #ffffff;
+  }
 }

@@ -1,2 +1,11 @@
 .logo{
+  font-size: 30px;
+  font-weight: 900;
+  transition: 0.5s;
+  a {
+    text-decoration: none;
+  }
+  &:hover{
+    text-shadow: 0 0 10px #FFFFFF;
+  }
 }
