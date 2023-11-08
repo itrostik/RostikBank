@@ -1,21 +1,21 @@
 .logout{
-  button{
-    border-radius: 10px;
-    background: #FFF;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 50px;
-    height: 50px;
-    transition: 0.5s;
-  }
-  path{
-    transition: 0.5s;
-  }
-  button:hover{
-    path{
-      fill: #FFFFFF;
-    }
-    background: black;
-  }
+	button{
+		border-radius: 10px;
+		background: #FFF;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 50px;
+		height: 50px;
+		transition: 0.5s;
+	}
+	path{
+		transition: 0.5s;
+	}
+	button:hover{
+		path{
+			fill: #FFFFFF;
+		}
+		background: black;
+	}
 }

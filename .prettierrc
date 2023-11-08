@@ -4,6 +4,7 @@
   "tabWidth": 2,
   "semi": false,
   "trailingComma": "none",
+  "useTabs": true,
   "importOrder": [
     "<THIRD_PARTY_MODULES",
     "^@/core/(.*)$",
