@@ -5,23 +5,25 @@ import renderService from '@/core/services/render.service'
 import styles from './layout.module.scss'
 import template from './layout.template.html'
 import { $R } from '@/core/rquery/rquery.lib'
+import { Notification } from '@/components/layout/notification/notification.component'
+
 export class Layout extends ChildComponent {
-	constructor({ router, children }) {
-		super()
-		this.router = router
-		this.children = children
-	}
+  constructor({ router, children }) {
+    super()
+    this.router = router
+    this.children = children
+  }
 
-	render() {
-		// const headerHTML = new Header().render()
-		this.element = renderService.htmlToElement(template, [], styles)
-		const mainElement = $R(this.element).find('main')
+  render() {
+    this.element = renderService.htmlToElement(template, [Notification], styles)
+    const mainElement = $R(this.element).find('main')
+    const contentContainer = $R(this.element).find('#content')
+    contentContainer.append(this.children)
 
-		const contentContainer = $R(this.element).find('#content')
-		contentContainer.append(this.children)
+    mainElement
+      .before(new Header({ router: this.router }).render())
+      .append(contentContainer.element)
 
-		mainElement.before(new Header().render()).append(contentContainer.element)
-
-		return this.element
-	}
+    return this.element
+  }
 }

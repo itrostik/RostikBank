@@ -1,0 +1,11 @@
+.notification{
+  display: none;
+  background: green;
+  height: 500px;
+  width: 500px;
+  &.error, &.success{
+    display: block;
+  }
+}
+
+

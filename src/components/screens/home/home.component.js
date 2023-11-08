@@ -5,30 +5,13 @@ import styles from './home.module.scss'
 import { $R } from '@/core/rquery/rquery.lib'
 import { Button } from '@/components/UI/button/button.component'
 import { Field } from '@/components/UI/field/field.component'
+import { Heading } from '@/components/UI/heading/heading.component'
 export class Home extends BaseScreen {
 	constructor() {
 		super({ title: 'Home' })
 	}
 	render() {
-		const element = renderService.htmlToElement(
-			template,
-			[
-				new Button({
-					children: 'Send',
-					onClick: () => console.log(52)
-				}),
-				new Field({
-					placeholder: 'login',
-					type: 'text',
-					value: '52',
-					name: 'login',
-					variant: 'login'
-				})
-			],
-			styles
-		)
-		$R(element).find('h1').css('color', 'green')
-		console.log(element)
+		const element = renderService.htmlToElement(template, [], styles)
 		return element
 	}
 }
