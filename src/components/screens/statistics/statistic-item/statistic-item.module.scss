@@ -1,0 +1,21 @@
+.statistic-item{
+  width: 100%;
+  padding: 20px;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  &.black{
+    color: #FFFFFF;
+    background-color: #000000;
+    .statistic-value, .statistic-label{
+      color: #FFFFFF;
+    }
+  }
+  &.white{
+    color: #000000;
+    background-color: #FFFFFF;
+    .statistic-value, .statistic-label{
+      color: #000000;
+    }
+  }
+}

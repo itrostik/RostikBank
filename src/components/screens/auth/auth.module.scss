@@ -34,3 +34,8 @@ footer{
   background: none;
   text-decoration: underline;
 }
+.auth-inputs{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}

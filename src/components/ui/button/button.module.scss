@@ -4,10 +4,29 @@
     pointer-events: none;
   }
   border-radius: 10px;
-  background: #FFF;
   color: #000;
   font-size: 14px;
   font-weight: 600;
   width: 100%;
   padding: 10px;
+}
+
+.white{
+  background: #FFFFFF;
+  color: #000000;
+  transition: 0.5s;
+  &:hover{
+    background: #282828;
+    color: #FFFFFF;
+  }
+}
+
+.gray{
+  background: #888888;
+  color: #000000;
+  transition: 0.5s;
+  &:hover{
+    background: #282828;
+    color: #FFFFFF;
+  }
 }

@@ -1,32 +1,73 @@
-.search{
-	width: 100%;
-	padding: 10px 20px;
-	display: flex;
-	align-items: center;
-	gap: 10px;
-	border-radius: 20px;
-	background: #FFF;
-	transition: 0.5s;
-	flex: 1 1 50%;
-	path{
-		fill: #C4C4C4;
-		transition: 0.5s;
-	}
-	input{
-		width: 100%;
-		color: #111111;
-		font-size: 14px;
-		font-weight: 600;
-	}
-	input::placeholder{
-		color: #C4C4C4;
-		font-size: 14px;
-		font-weight: 600;
-	}
-	&:focus-within{
-		path {
-			fill: #111111;
-		}
-		box-shadow: 0 0 10px #ffffff;
-	}
+.search {
+  position: relative;
+  width: 100%;
+  padding: 10px 20px;
+  display: flex;
+  flex-direction: column;
+  //gap: 10px;
+  border-radius: 20px;
+  background: #FFF;
+  transition: 0.5s;
+  flex: 1 1 50%;
+  position: relative;
+  z-index: 5;
+  path {
+    fill: #C4C4C4;
+    transition: 0.5s;
+  }
+
+  .search__input{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  input {
+    width: 100%;
+    color: #111111;
+    font-size: 14px;
+    font-weight: 600;
+  }
+
+  input::placeholder {
+    color: #C4C4C4;
+    font-size: 14px;
+    font-weight: 600;
+  }
+
+  &:focus-within {
+    path {
+      fill: #111111;
+    }
+
+    box-shadow: 0 0 10px #ffffff;
+  }
+}
+
+.results{
+  margin: 45px 0 0 0;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 10px;
+  opacity: 0;
+  &.visible{
+    opacity: 1;
+  }
+}
+.item {
+  cursor: pointer;
+  width: 100%;
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: all 0.3s;
+  &:hover {
+    background: #C4C4C4;
+  }
+  &.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }

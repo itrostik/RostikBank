@@ -1,2 +1,11 @@
 .home {
+  display: grid;
+  grid-template-columns: 2.2fr 1fr;
+  gap: 30px;
+  position: relative;
+  &__right{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
 }

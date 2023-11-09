@@ -1,12 +1,19 @@
 .field {
   input{
     width: 100%;
-    margin: 0 0 20px 0;
     padding: 10px;
     border-radius: 10px;
     color: #111111;
     font-weight: 500;
     border: 1px solid #111111;
+    transition: 0.5s;
+  }
+}
+
+.field:focus-within{
+  input{
+    box-shadow: 0px 0px 10px #FFFFFF;
+    border: 1px solid #FFFFFF;
   }
 }
 

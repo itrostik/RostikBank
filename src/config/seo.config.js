@@ -1,4 +1,4 @@
-const SITE_NAME = 'RED Bank - Vanilla JS'
+const SITE_NAME = 'Rostik Bank'
 
 export const getTitle = title => {
 	return title ? `${title} | ${SITE_NAME}` : SITE_NAME

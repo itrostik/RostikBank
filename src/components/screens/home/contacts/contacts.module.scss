@@ -1,0 +1,27 @@
+.contacts{
+  position: relative;
+}
+
+.contacts-list{
+  margin: 20px 0 0 0;
+  background: #000000;
+  border-radius: 10px;
+  padding: 10px;
+  width: 100%;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  button{
+    width: 100%;
+    transition: 0.5s;
+    background: none;
+    cursor: pointer;
+    span{
+      color: #FFFFFF;
+    }
+    &:hover{
+      background: #111111;
+    }
+  }
+}

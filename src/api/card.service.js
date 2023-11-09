@@ -6,7 +6,7 @@ export class CardService {
 	#BASE_URL = '/cards'
 
 	constructor() {
-		this.store = Store.getInstance()
+		this.store = Store.getInstance().state
 		this.notificationService = new NotificationService()
 	}
 
@@ -31,10 +31,7 @@ export class CardService {
 			method: 'PATCH',
 			body: { amount: +amount },
 			onSuccess: () => {
-				this.notificationService.show(
-					'success',
-					'Balance successfully changed!'
-				)
+				this.notificationService.show('success', 'Баланс успешно изменён!')
 				onSuccess()
 			}
 		})
@@ -60,10 +57,7 @@ export class CardService {
 				toCardNumber
 			},
 			onSuccess: () => {
-				this.notificationService.show(
-					'success',
-					'Transfer successfully completed!'
-				)
+				this.notificationService.show('success', 'Перевод успешно завершён!')
 				onSuccess()
 			}
 		})

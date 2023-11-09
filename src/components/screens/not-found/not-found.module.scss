@@ -1,0 +1,11 @@
+.not-found{
+  background-color: #111111;
+  width: 100%;
+  position: absolute;
+  height: calc(100vh - 40px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-weight: 700;
+}

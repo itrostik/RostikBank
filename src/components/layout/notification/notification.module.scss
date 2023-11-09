@@ -1,17 +1,28 @@
 .notification{
 	display: none;
 	background: green;
-	min-height: 200px;
+	min-height: 100px;
 	width: 200px;
 	position: absolute;
-	right: 50px;
-	top: 50px;
+	right: 0;
+	top: 150px;
 	justify-content: center;
 	align-items: center;
 	border-radius: 20px;
 	font-weight: 700;
 	font-size: 16px;
 	text-align: center;
+	transform: translateX(200px);
+	z-index: 100;
+	animation: slideIn 0.5s forwards;
+	@keyframes slideIn {
+		0% {
+			transform: translateX(200px);
+		}
+		100% {
+			transform: translateX(0);
+		}
+	}
 	&.error, &.success{
 		display: flex;
 	}

@@ -1,2 +1,64 @@
 .card-info {
+  display: flex;
+  border-radius: 10px;
+  background: #000;
+  align-items: center;
+  padding: 20px 10px;
+  gap: 30px;
+  &:hover{
+    .card-image{
+      background: #FFFFFF;
+    }
+  }
+}
+
+.line{
+  width: 1px;
+  height: 40px;
+  margin: 0 10px;
+  background-color: #888888;
+}
+
+.card-image{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #C4C4C4;
+  transition: 0.5s;
+  padding: 10px;
+  border-radius: 50%;
+  width: 39px;
+  height: 39px;
+}
+
+.card-number__value{
+  cursor: pointer;
+}
+
+.card-balance, .card-cvc, .card-number, .card-expireDate {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  &__text{
+    color: #888;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+  &__value{
+    color: #FFFFFF;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+}
+
+.card-cvc__block{
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.toggle-cvc{
+  background: none;
 }

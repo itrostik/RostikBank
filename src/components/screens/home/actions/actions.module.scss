@@ -1,0 +1,16 @@
+.actions{
+  width: 100%;
+  background: #000000;
+  padding: 10px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  div{
+    gap: 10px;
+    display: flex;
+    button{
+      padding: 10px;
+    }
+  }
+}
